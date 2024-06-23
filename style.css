@@ -363,7 +363,6 @@ footer .logos i{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 1rem;
     }
     .radio-buttons label{
         font-size: large; 
@@ -378,6 +377,10 @@ footer .logos i{
         width: 290px;
         color: white;
       
+    }
+    .search-bar{
+        display: grid;
+        place-content: center;
     }
     #MovieInDetails{
         text-align: center;
