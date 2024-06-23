@@ -335,7 +335,17 @@ footer .logos i{
          width: 390px;
     }
 } 
+@media screen and (max-width:400px) {
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        
 
+    }
+    .card img{
+        height: 300px;
+         width: 250px;
+    }
+} 
 .card:hover{
     transform: scale(1.05);
     transition: all .5s ease-in-out;
