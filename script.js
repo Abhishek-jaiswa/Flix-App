@@ -102,10 +102,9 @@ async function movieDetails(){
 
 async function showDetails(){
     let id = window.location.search.split('=')[1];
-    console.log(id)
     let movie = await fetchMovieDetails(id);
-    console.log(movie);
     let div = document.createElement('div');
+    div.classList.add('showUpdate');
     div.innerHTML = `
      <a href="tv_shows-details.html">
             <button class="hello btn">Back To Shows</button>

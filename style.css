@@ -394,6 +394,13 @@ footer .logos i{
         display: grid;
         place-content: center;
     }
+    .showUpdate{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
+    }
 } 
 
 
