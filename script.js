@@ -106,14 +106,10 @@ async function showDetails(){
     let div = document.createElement('div');
     div.classList.add('showUpdate');
     div.innerHTML = `
-     <a href="tv_shows-details.html">
-            <button class="hello btn">Back To Shows</button>
-    </a>
-
-        <main class="movie-info">
              ${
                 movie.image ? `<img src="${movie.image.original}" alt="${movie.name}"  width=350 style='padding: 10px'></img>` : `<img src="images/no-image.jpg" alt="" width=350 style='padding: 10px'></img>`
        }
+     
             <div class="info-texts">
                 <h3>${movie.name}</h3>
                 <div class="core">
@@ -123,21 +119,20 @@ async function showDetails(){
                     <p >Release Date: 2022-20-10</p>
                     <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit iure eaque quis soluta incidunt sit ducimus magnam. Facilis, quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam, itaque nobis quia autem dicta quae, officia, reprehenderit veritatis hic omnis iusto.</p>
                     <div class="type">
-                        <p>Geners</p>
+                        <p>${movie.type}</p>
                     <p>Action</p>
                     <p>Fantasy</p>
                     <p>Science Fiction</p>
                     </div>
                     <a href="" class="btn Movie-Home_page"  >
-                        View Show Home Page
+                        View Movie Home Page
                     </a>
                 </div>
             </div>
-        </main>
 
         <main class="moreInfo">
             <section class="budget">
-                <h3>Show INFO</h3>
+                <h3>MOVIE INFO</h3>
                 <div>Budget: <span>$200,000,00</span></div>
                 <div>Revenue: <span>$450,000,00</span></div>
                 <div>Runtime: <span>125 Minutes</span></div>
@@ -146,7 +141,7 @@ async function showDetails(){
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eveniet?</p>
 
             </section>
-        </main>
+        </main> 
     `;
     document.querySelector('#MovieInDetails').appendChild(div)
 }
