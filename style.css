@@ -381,6 +381,11 @@ footer .logos i{
     .search-bar{
         display: grid;
         place-content: center;
+        gap: .9rem;
+    }
+    .search-bar #submit{
+        width: fit-content;
+        padding: .2rem .6rem;
     }
     #MovieInDetails{
         text-align: center;
