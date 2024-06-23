@@ -379,8 +379,10 @@ footer .logos i{
       
     }
     .search-bar{
-        display: grid;
-        place-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         gap: .9rem;
     }
     .search-bar #submit{
