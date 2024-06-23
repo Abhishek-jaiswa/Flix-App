@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spinner.css">
+</head>
+<body>
+    <header id="main-header">
+        <a href="index.html" id="Name">FLIX</a>
+        <div id="options">
+            <a href="index.html" class="highlight">Movies</a>
+            <a href="tv_shows-details.html" class="highlight">TV Shows</a>
+        </div>
+    </header>
+
+    <section class="search-container">
+        <form class="filter-container" action="search.html">
+            <div class="radio-buttons">
+                <input type="radio" name="type" id="Movies" value="movie" checked>
+                <label for="Movies">Movies</label>
+                <input type="radio" name="type" id="TV Shows" value="tv">
+                <label for="TV Shows">TV Shows</label>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Enter search item" name="search-term">
+                <button type="submit" id="submit">Search</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="popular-movies">
+        <h2 class="pop">POPULAR MOVIES</h2>
+        <div class="card-container "></div>        
+
+    </section>
+    <div id="pagination">
+        <div class="pagination">
+          <button class="btn " id="prev">Prev</button>
+          <button class="btn " id="next">Next</button>
+          <div class="page-counter">Page 1 of 5</div>
+        </div>
+      </div>
+
+      <footer>
+        <h3>FLIXX</h3>
+        <div class="logos">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+   
+
+    <div class="spinner"></div>
+    <script src="https://kit.fontawesome.com/683b5cf116.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
